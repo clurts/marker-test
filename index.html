@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
         
-        @supports (::marker) {
+        @supports (li::marker) {
             li::marker {
                 color: orange;
             }
         }
         
 
-        @supports not (::marker) {
+        @supports not (li::marker) {
             ul {
                 list-style-type: none;
                 padding: 20px;
