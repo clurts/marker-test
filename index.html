@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        
+        li::marker {
+            color: orange;
+        }
+
+        @supports not (li::marker) {
+            ul {
+                list-style-type: none;
+                padding: 20px;
+            }
+            li::before {
+                content:" \2295"
+            }
+        }
+    
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Test punkt 1</li>
+        <li>Test punkt 2</li>
+        <li>Test punkt 3</li>
+        <li>Test punkt 4</li>
+        <li>Test punkt 5</li>
+    </ul>
+</body>
+</html>
